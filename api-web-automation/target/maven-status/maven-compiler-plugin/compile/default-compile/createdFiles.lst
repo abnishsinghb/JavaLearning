@@ -1,0 +1,8 @@
+com/apiWebAutomation/hooks/Hooks.class
+com/apiWebAutomation/utils/PlaywrightFactory.class
+com/apiWebAutomation/base/BaseTest.class
+com/apiWebAutomation/App.class
+com/apiWebAutomation/pages/LoginPage.class
+com/apiWebAutomation/utils/ApiUtils.class
+com/apiWebAutomation/config/ConfigManager.class
+com/apiWebAutomation/config/FrameworkConfigReader.class
