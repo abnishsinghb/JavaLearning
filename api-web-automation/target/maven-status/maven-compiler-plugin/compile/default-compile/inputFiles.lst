@@ -1,8 +1,0 @@
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/App.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/base/BaseTest.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/config/ConfigManager.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/config/FrameworkConfigReader.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/hooks/Hooks.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/pages/LoginPage.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/utils/ApiUtils.java
-/Users/abnish/Desktop/api-web-automation/src/main/java/com/apiWebAutomation/utils/PlaywrightFactory.java
