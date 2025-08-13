@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="5.629" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abnish/api-web-play/bdd-playwright-automation/target/test-classes:/Users/abnish/api-web-play/bdd-playwright-automation/target/classes:/Users/abnish/.m2/repository/io/cucumber/cucumber-java/7.16.1/cucumber-java-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-core/7.16.1/cucumber-core-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-gherkin/7.16.1/cucumber-gherkin-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.16.1/cucumber-gherkin-messages-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/datatable/7.16.1/datatable-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-plugin/7.16.1/cucumber-plugin-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/docstring/7.16.1/docstring-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/html-formatter/21.3.0/html-formatter-21.3.0.jar:/Users/abnish/.m2/repository/io/cucumber/junit-xml-formatter/0.3.0/junit-xml-formatter-0.3.0.jar:/Users/abnish/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/abnish/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.16.1/cucumber-junit-platform-engine-7.16.1.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/playwright/1.44.0/playwright-1.44.0.jar:/Users/abnish/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/abnish/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/driver/1.44.0/driver-1.44.0.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/driver-bundle/1.44.0/driver-bundle-1.44.0.jar:/Users/abnish/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/abnish/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/abnish/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/abnish/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/abnish/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/abnish/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/abnish/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/abnish/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite/1.10.2/junit-platform-suite-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.2/junit-platform-suite-api-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.2/junit-platform-suite-engine-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.2/junit-platform-suite-commons-1.10.2.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/Users/abnish/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-junit5/2.17.3/allure-junit5-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-junit-platform/2.17.3/allure-junit-platform-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/abnish/.m2/repository/org/mongodb/mongodb-driver-sync/4.11.1/mongodb-driver-sync-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/mongodb-driver-core/4.11.1/mongodb-driver-core-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/bson-record-codec/4.11.1/bson-record-codec-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/bson/4.11.1/bson-4.11.1.jar:/Users/abnish/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/abnish/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/abnish/api-web-play/bdd-playwright-automation/target/surefire/surefirebooter-20250808172859461_3.jar /Users/abnish/api-web-play/bdd-playwright-automation/target/surefire 2025-08-08T17-28-59_355-jvmRun1 surefire-20250808172859461_1tmp surefire_0-20250808172859461_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="DockerMongoDBIntegrationTest"/>
+    <property name="surefire.test.class.path" value="/Users/abnish/api-web-play/bdd-playwright-automation/target/test-classes:/Users/abnish/api-web-play/bdd-playwright-automation/target/classes:/Users/abnish/.m2/repository/io/cucumber/cucumber-java/7.16.1/cucumber-java-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-core/7.16.1/cucumber-core-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-gherkin/7.16.1/cucumber-gherkin-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.16.1/cucumber-gherkin-messages-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/abnish/.m2/repository/io/cucumber/datatable/7.16.1/datatable-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-plugin/7.16.1/cucumber-plugin-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/docstring/7.16.1/docstring-7.16.1.jar:/Users/abnish/.m2/repository/io/cucumber/html-formatter/21.3.0/html-formatter-21.3.0.jar:/Users/abnish/.m2/repository/io/cucumber/junit-xml-formatter/0.3.0/junit-xml-formatter-0.3.0.jar:/Users/abnish/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/abnish/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/abnish/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.16.1/cucumber-junit-platform-engine-7.16.1.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/playwright/1.44.0/playwright-1.44.0.jar:/Users/abnish/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/abnish/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/driver/1.44.0/driver-1.44.0.jar:/Users/abnish/.m2/repository/com/microsoft/playwright/driver-bundle/1.44.0/driver-bundle-1.44.0.jar:/Users/abnish/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/abnish/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/abnish/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/abnish/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/abnish/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/abnish/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/abnish/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/abnish/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/abnish/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/abnish/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite/1.10.2/junit-platform-suite-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.2/junit-platform-suite-api-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.2/junit-platform-suite-engine-1.10.2.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.2/junit-platform-suite-commons-1.10.2.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/abnish/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/Users/abnish/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-junit5/2.17.3/allure-junit5-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-junit-platform/2.17.3/allure-junit-platform-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/Users/abnish/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/abnish/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/abnish/.m2/repository/org/mongodb/mongodb-driver-sync/4.11.1/mongodb-driver-sync-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/mongodb-driver-core/4.11.1/mongodb-driver-core-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/bson-record-codec/4.11.1/bson-record-codec-4.11.1.jar:/Users/abnish/.m2/repository/org/mongodb/bson/4.11.1/bson-4.11.1.jar:/Users/abnish/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/abnish/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:"/>
+    <property name="allure.results.directory" value="/Users/abnish/api-web-play/bdd-playwright-automation/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abnish"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abnish/api-web-play/bdd-playwright-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abnish/api-web-play/bdd-playwright-automation/target/surefire/surefirebooter-20250808172859461_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1"/>
+    <property name="user.name" value="abnish"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/abnish/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/h1/s7y2xxt97xd2pql25f1w746c0000gp/T/"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="/Users/abnish/api-web-play/bdd-playwright-automation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abnish/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="24.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testDockerConnection" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.033">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Starting Docker MongoDB Integration Tests
+Aug 08, 2025 5:29:05 PM com.framework.database.MongoDBConnection initializeConnection
+INFO: Connecting to MongoDB Docker environment: DOCKER
+Aug 08, 2025 5:29:05 PM com.framework.database.MongoDBConnection initializeConnection
+INFO: Connection URI: mongodb://***:***@localhost:27017/testdb?authSource=admin
+[main] INFO org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.6"}, "platform": "Java/Homebrew/24.0.1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f80945f, com.mongodb.Jep395RecordCodecProvider@ff684e1, com.mongodb.KotlinCodecProvider@23aa363a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=30000, readTimeoutMS=30000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=30000, readTimeoutMS=30000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=20, minSize=5, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=1800000, maxConnectionIdleTimeMS=60000, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+[main] INFO org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+[cluster-ClusterId{value='6895e689a788e769ce6bd35f', description='null'}-localhost:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8084000}
+Aug 08, 2025 5:29:05 PM com.framework.database.MongoDBConnection testConnectionWithRetry
+INFO: MongoDB connection test successful on attempt 1
+Aug 08, 2025 5:29:05 PM com.framework.database.MongoDBConnection initializeConnection
+INFO: Successfully connected to MongoDB Docker database: testdb
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing Docker MongoDB connection...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Docker MongoDB connection test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testMongoDBEnvironment" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.003">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing MongoDB Docker environment...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Connection info: Environment: DOCKER, Database: testdb, URI: mongodb://***:***@localhost:27017/testdb?authSource=admin
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ MongoDB environment test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testDatabaseOperations" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.041">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing basic database operations...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Database operations test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testMultipleDatabaseAccess" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.027">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing multiple database access...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Multiple database access test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testConnectionPoolPerformance" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.018">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing connection pool performance...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Performance test passed - Insert: 12ms, Count: 1ms
+]]></system-err>
+  </testcase>
+  <testcase name="testBasicOperations" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.014">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing MongoDB basic operations...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Basic operations test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testIndexOperations" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.02">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing MongoDB index operations...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Index operations test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testAggregationPipeline" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.014">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing MongoDB aggregation pipeline...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Aggregation pipeline test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testConnectionResilience" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.154">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing connection resilience...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Connection resilience test passed
+]]></system-err>
+  </testcase>
+  <testcase name="testCleanupAndVerification" classname="com.bdd.framework.mongo.DockerMongoDBIntegrationTest" time="0.029">
+    <system-err><![CDATA[[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Testing cleanup and final verification...
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'integration_test' with 1 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'multi_db_test' with 1 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'performance_test' with 100 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'operation_test' with 2 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'index_test' with 3 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'aggregation_test' with 4 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - Cleaned collection 'resilience_test' with 10 documents
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - ✅ Cleanup completed - 7 collections cleaned
+[main] INFO com.bdd.framework.mongo.DockerMongoDBIntegrationTest - 🎉 All Docker MongoDB integration tests passed successfully!
+]]></system-err>
+  </testcase>
+</testsuite>

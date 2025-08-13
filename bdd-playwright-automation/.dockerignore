@@ -1,0 +1,61 @@
+# Docker ignore file - excludes unnecessary files from Docker build context
+
+# Target directory (build artifacts)
+target/
+*/target/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Test reports (will be generated inside container)
+allure-results/
+target/surefire-reports/
+target/site/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Maven wrapper (use container's Maven)
+.mvn/
+mvnw
+mvnw.cmd
+
+# Docker files (except Dockerfile)
+*.dockerfile
+docker-compose*.yml
+
+# Documentation
+*.md
+docs/
+
+# Scripts (they'll be copied explicitly)
+run-demoqa-tests.bat
+# Allow the scripts we need
+!run-tests.sh
+!run-demoqa-tests.sh
+
+# IDE settings
+.settings/
+.project
+.classpath

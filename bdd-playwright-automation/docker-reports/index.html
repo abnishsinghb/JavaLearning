@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Integration Test Reports</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white; 
+            padding: 40px; 
+            text-align: center; 
+        }
+        .header h1 { margin: 0 0 10px 0; font-size: 2.5em; }
+        .header p { margin: 0; opacity: 0.9; font-size: 1.1em; }
+        .content { padding: 40px; }
+        .reports-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin: 30px 0; 
+        }
+        .report-card { 
+            background: #f8f9fa; 
+            border-radius: 10px; 
+            padding: 30px; 
+            text-align: center; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .report-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: #4facfe;
+        }
+        .report-card h3 { 
+            color: #333; 
+            margin: 0 0 15px 0; 
+            font-size: 1.4em;
+        }
+        .report-card p { 
+            color: #666; 
+            margin: 0 0 20px 0; 
+            line-height: 1.6;
+        }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 30px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+        }
+        .btn.primary { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .btn.secondary { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .btn.tertiary { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .icon { font-size: 3em; margin-bottom: 15px; }
+        .footer { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            text-align: center; 
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+        .timestamp { 
+            background: #e9ecef; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            text-align: center;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 MongoDB Integration Test Reports</h1>
+            <p>Comprehensive test results and analysis dashboard</p>
+        </div>
+        
+        <div class="content">
+            <div class="timestamp">
+                <strong>📅 Generated:</strong> <span id="timestamp"></span>
+            </div>
+            
+            <div class="reports-grid">
+                <div class="report-card">
+                    <div class="icon">🌐</div>
+                    <h3>Allure Report</h3>
+                    <p>Interactive test results with detailed execution timeline, screenshots, and comprehensive analytics.</p>
+                    <a href="/allure/" class="btn primary">View Allure Report</a>
+                </div>
+                
+                <div class="report-card">
+                    <div class="icon">📋</div>
+                    <h3>Surefire Reports</h3>
+                    <p>Raw Maven Surefire test execution reports with XML data and detailed logs.</p>
+                    <a href="/surefire/" class="btn secondary">View Surefire Reports</a>
+                </div>
+                
+                <div class="report-card">
+                    <div class="icon">📊</div>
+                    <h3>Test Summary</h3>
+                    <p>Quick overview of test execution results with key metrics and success rates.</p>
+                    <a href="/test-summary.html" class="btn tertiary">View Summary</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 20px; background: #e3f2fd; border-radius: 8px;">
+                <h3 style="color: #1976d2; margin-top: 0;">🔧 Test Environment Information</h3>
+                <ul style="color: #424242; line-height: 1.8;">
+                    <li><strong>MongoDB Version:</strong> 7.0 (Docker)</li>
+                    <li><strong>Test Framework:</strong> JUnit 5 + Maven Surefire</li>
+                    <li><strong>Reporting:</strong> Allure Framework</li>
+                    <li><strong>Server:</strong> Docker + Nginx</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🐳 Reports served via Docker container | ⚡ Auto-refresh available</p>
+        </div>
+    </div>
+    
+    <script>
+        // Set current timestamp
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+        
+        // Auto-refresh every 30 seconds if reports are being generated
+        if (window.location.search.includes('auto-refresh')) {
+            setTimeout(() => {
+                window.location.reload();
+            }, 30000);
+        }
+    </script>
+</body>
+</html>

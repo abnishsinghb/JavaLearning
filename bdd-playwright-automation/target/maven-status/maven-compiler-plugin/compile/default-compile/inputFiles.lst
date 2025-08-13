@@ -1,0 +1,13 @@
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/utils/TestDataManager.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/utils/TestDataFactory.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/web/pages/BasePage.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/api/client/UserClient.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/utils/TestDataBuilder.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/utils/JsonTestDataProvider.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/config/DemoQAConfig.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/web/pages/LoginPage.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/database/MongoDBConnection.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/web/pages/DemoQALoginPage.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/api/model/UserRequest.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/utils/JsonUtil.java
+/Users/abnish/api-web-play/bdd-playwright-automation/src/main/java/com/framework/config/EnvironmentConfig.java

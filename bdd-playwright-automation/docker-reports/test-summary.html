@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Integration Test Summary</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .status-passed { color: #28a745; }
+        .status-failed { color: #dc3545; }
+        .status-unknown { color: #6c757d; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric { background: #f8f9fa; padding: 15px; border-radius: 5px; text-align: center; }
+        .metric-value { font-size: 2em; font-weight: bold; }
+        .links { margin-top: 30px; }
+        .btn { display: inline-block; padding: 10px 20px; margin: 5px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 MongoDB Integration Test Results</h1>
+            <h2 class="status-passed">Status: PASSED</h2>
+            <p>Generated on: 2025-08-08 17:29:09</p>
+        </div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">10</div>
+                <div>Total Tests</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value status-passed">10</div>
+                <div>Passed</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value status-failed">0</div>
+                <div>Failed</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">100%</div>
+                <div>Success Rate</div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <h3>📊 Detailed Reports</h3>
+            <a href="/allure/" class="btn">🌐 Allure Report (Interactive)</a>
+            <a href="/surefire/" class="btn">📋 Surefire Report (HTML)</a>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 15px; background: #e9ecef; border-radius: 5px;">
+            <h4>🔧 Test Environment</h4>
+            <ul>
+                <li><strong>MongoDB Version:</strong> 7.0</li>
+                <li><strong>Java Version:</strong> 21.0.5</li>
+                <li><strong>Maven Version:</strong> 3.9.9</li>
+                <li><strong>Docker Container:</strong> mongodb-test</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

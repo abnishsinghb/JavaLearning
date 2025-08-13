@@ -1,0 +1,6 @@
+com/framework/web/pages/LoginPage.class
+com/framework/utils/JsonUtil.class
+com/framework/config/EnvironmentConfig.class
+com/framework/api/model/UserRequest.class
+com/framework/database/MongoDBConnection.class
+com/framework/api/client/UserClient.class

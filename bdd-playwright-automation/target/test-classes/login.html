@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Demo Login Page</title>
+
+    <style>
+
+      body { font-family: Arial, sans-serif; }
+
+      .hidden { display: none; }
+
+      .container { max-width: 300px; margin: 100px auto; border: 1px solid #ccc; padding: 20px; border-radius: 5px; }
+
+      label { display: block; margin-top: 10px; }
+
+      input, button { width: 100%; margin-top: 5px; padding: 8px; }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form id="loginForm">
+
+        <label for="username">Username:</label>
+
+        <input id="username" type="text" />
+
+
+
+        <label for="password">Password:</label>
+
+        <input id="password" type="password" />
+
+
+
+        <button id="loginBtn" type="button">Login</button>
+
+        <button id="logoutBtn" type="button" class="hidden">Logout</button>
+
+      </form>
+
+      <div id="message" style="margin-top: 15px;"></div>
+
+    </div>
+
+    <script>
+
+      const loginBtn = document.getElementById('loginBtn');
+
+      const logoutBtn = document.getElementById('logoutBtn');
+
+      const username = document.getElementById('username');
+
+      const password = document.getElementById('password');
+
+      const message = document.getElementById('message');
+
+
+
+      loginBtn.onclick = function() {
+
+        if (username.value && password.value) {
+
+          message.textContent = "Login successful!";
+
+          loginBtn.classList.add('hidden');
+
+          logoutBtn.classList.remove('hidden');
+
+        } else {
+
+          message.textContent = "Please enter username and password.";
+
+        }
+
+      };
+
+
+
+      logoutBtn.onclick = function() {
+
+        message.textContent = "Logged out!";
+
+        loginBtn.classList.remove('hidden');
+
+        logoutBtn.classList.add('hidden');
+
+        username.value = "";
+
+        password.value = "";
+
+      };
+
+    </script>
+
+  </body>
+
+</html>

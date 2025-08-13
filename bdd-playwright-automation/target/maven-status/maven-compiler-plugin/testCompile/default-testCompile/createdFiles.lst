@@ -1,0 +1,4 @@
+com/framework/api/stepdefs/ApiSteps.class
+com/framework/runners/RunAllTests.class
+com/bdd/framework/mongo/DockerMongoDBIntegrationTest.class
+com/framework/web/stepdefs/LoginSteps.class
