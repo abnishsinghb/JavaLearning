@@ -1,0 +1,425 @@
+{
+  "success": 1,
+  "msg": "",
+  "data": {
+    "users": [
+      {
+        "name": "Admin",
+        "user_id": "6777b95dd47b78003a575367",
+        "email_id": "abnish.singh@onsurity.com",
+        "phone_number": "9739560048",
+        "role": {
+          "_id": "67bf3395dd4d470038ef927f",
+          "roleName": "Admin",
+          "roleDesc": "Has all privileges",
+          "roleId": "1740583829437_employer_admin",
+          "permissions": [
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_member"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_member_bulk_download_excel"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_member_deactivate"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_role_management"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_role_management_add_modify_role"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_role_management_invite_member"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_billing_download"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_billing_email"
+            },
+            {
+              "can": [
+                "read",
+                "write",
+                "update"
+              ],
+              "_pid": "employer_billing_list"
+            },
+            {
+              "can": [
+                "read"
+              ],
+              "_pid": "menu_employer_billing_list"
+            },
+            {
+              "can": [
+                "read"
+              ],
+              "_pid": "menu_employer_member_list"
+            },
+            {
+              "can": [
+                "read"
+              ],
+              "_pid": "menu_employer_users"
+            }
+          ],
+          "primary": true,
+          "parentId": "OSHE-1740389180454",
+          "createdAt": "2025-02-26T15:30:29.522Z",
+          "updatedAt": "2025-02-26T15:30:29.522Z",
+          "__v": 0
+        },
+        "status": true,
+        "loggedin_user": true,
+        "avatar": "",
+        "super_admin": true
+      }
+    ],
+    "employer_roles": [
+      {
+        "_id": "67bf3395dd4d470038ef927f",
+        "roleName": "Admin",
+        "roleDesc": "Has all privileges",
+        "roleId": "1740583829437_employer_admin",
+        "permissions": [
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_member"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_member_bulk_download_excel"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_member_deactivate"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_role_management"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_role_management_add_modify_role"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_role_management_invite_member"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_billing_download"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_billing_email"
+          },
+          {
+            "can": [
+              "read",
+              "write",
+              "update"
+            ],
+            "_pid": "employer_billing_list"
+          },
+          {
+            "can": [
+              "read"
+            ],
+            "_pid": "menu_employer_billing_list"
+          },
+          {
+            "can": [
+              "read"
+            ],
+            "_pid": "menu_employer_member_list"
+          },
+          {
+            "can": [
+              "read"
+            ],
+            "_pid": "menu_employer_users"
+          }
+        ],
+        "primary": true,
+        "parentId": "OSHE-1740389180454",
+        "createdAt": "2025-02-26T15:30:29.522Z",
+        "updatedAt": "2025-02-26T15:30:29.522Z",
+        "__v": 0
+      }
+    ],
+    "employer_permission_list": [
+      {
+        "rows": [
+          {
+            "_id": "601809593b77838f82c08853",
+            "permissionName": "Users & Roles",
+            "permissionId": "menu_employer_users",
+            "group": "Menu",
+            "__v": 0,
+            "sort_order": 1,
+            "appId": "employer_dashboard",
+            "component_order": 14
+          },
+          {
+            "_id": "6516a8698846d94ce8b75560",
+            "permissionName": "Claims Tracker",
+            "permissionId": "menu_employer_claimstracker_list",
+            "group": "Menu",
+            "__v": 0,
+            "sort_order": 20,
+            "appId": "employer_dashboard",
+            "component_order": 20
+          },
+          {
+            "_id": "601809593b77838f82c08851",
+            "permissionName": "Members",
+            "permissionId": "menu_employer_member_list",
+            "__v": 0,
+            "group": "Menu",
+            "sort_order": 10,
+            "appId": "employer_dashboard",
+            "component_order": 11
+          },
+          {
+            "_id": "601809593b77838f82c08852",
+            "permissionName": "Billing",
+            "permissionId": "menu_employer_billing_list",
+            "__v": 0,
+            "group": "Menu",
+            "sort_order": 5,
+            "appId": "employer_dashboard",
+            "component_order": 12
+          }
+        ],
+        "sort_order": 1,
+        "group": "Menu"
+      },
+      {
+        "rows": [
+          {
+            "_id": "601809593b77838f82c0884f",
+            "permissionName": "Employer Billing List",
+            "permissionId": "employer_billing_list",
+            "group": "Billings",
+            "__v": 0,
+            "sort_order": 15,
+            "appId": "employer_dashboard",
+            "component_order": 10
+          },
+          {
+            "_id": "6018095a3b77838f82c08856",
+            "permissionName": "Download Invoice / Estimate",
+            "permissionId": "employer_billing_download",
+            "group": "Billings",
+            "__v": 0,
+            "sort_order": 50,
+            "appId": "employer_dashboard",
+            "component_order": 10
+          },
+          {
+            "_id": "601809593b77838f82c08855",
+            "permissionName": "Send Email",
+            "permissionId": "employer_billing_email",
+            "group": "Billings",
+            "__v": 0,
+            "sort_order": 60,
+            "appId": "employer_dashboard",
+            "component_order": 10
+          }
+        ],
+        "sort_order": 15,
+        "group": "Billings"
+      },
+      {
+        "rows": [
+          {
+            "_id": "6018095a3b77838f82c08858",
+            "permissionName": "Invite Dashboard User",
+            "permissionId": "employer_role_management_invite_member",
+            "group": "Users & Roles",
+            "sort_order": 40,
+            "appId": "employer_dashboard",
+            "component_order": 10,
+            "__v": 0
+          },
+          {
+            "_id": "6018095a3b77838f82c0885b",
+            "permissionName": "Add/Modify Roles",
+            "permissionId": "employer_role_management_add_modify_role",
+            "group": "Users & Roles",
+            "sort_order": 25,
+            "appId": "employer_dashboard",
+            "component_order": 10,
+            "__v": 0
+          },
+          {
+            "_id": "601809593b77838f82c08850",
+            "permissionName": "Employer Role Management",
+            "permissionId": "employer_role_management",
+            "group": "Users & Roles",
+            "__v": 0,
+            "sort_order": 20,
+            "appId": "employer_dashboard",
+            "component_order": 10
+          }
+        ],
+        "sort_order": 40,
+        "group": "Users & Roles"
+      },
+      {
+        "rows": [
+          {
+            "_id": "6018095a3b77838f82c08857",
+            "permissionName": "Deactivate Team Member",
+            "permissionId": "employer_member_deactivate",
+            "group": "Members",
+            "sort_order": 45,
+            "appId": "employer_dashboard",
+            "component_order": 10,
+            "__v": 0
+          },
+          {
+            "_id": "6018095a3b77838f82c0885a",
+            "permissionName": "Bulk Download Excel Team Member",
+            "permissionId": "employer_member_bulk_download_excel",
+            "group": "Members",
+            "sort_order": 30,
+            "appId": "employer_dashboard",
+            "component_order": 10,
+            "__v": 0
+          },
+          {
+            "_id": "601809593b77838f82c08854",
+            "permissionName": "Team Member List",
+            "permissionId": "employer_member",
+            "group": "Members",
+            "__v": 0,
+            "sort_order": 65,
+            "appId": "employer_dashboard",
+            "component_order": 10
+          }
+        ],
+        "sort_order": 45,
+        "group": "Members"
+      }
+    ],
+    "permissions": {
+      "roleId": "1740583829437_employer_admin",
+      "roleName": "Admin",
+      "employer_id": "OSHE-1740389180454",
+      "permissions": [
+        {
+          "can": [
+            "read",
+            "write",
+            "update"
+          ],
+          "_pid": "employer_role_management",
+          "permissionName": "Employer Role Management",
+          "group": "Users & Roles",
+          "sort_order": 20,
+          "component_order": 10
+        },
+        {
+          "can": [
+            "read",
+            "write",
+            "update"
+          ],
+          "_pid": "employer_role_management_add_modify_role",
+          "permissionName": "Add/Modify Roles",
+          "group": "Users & Roles",
+          "sort_order": 25,
+          "component_order": 10
+        },
+        {
+          "can": [
+            "read",
+            "write",
+            "update"
+          ],
+          "_pid": "employer_role_management_invite_member",
+          "permissionName": "Invite Dashboard User",
+          "group": "Users & Roles",
+          "sort_order": 40,
+          "component_order": 10
+        }
+      ]
+    }
+  }
+} 
