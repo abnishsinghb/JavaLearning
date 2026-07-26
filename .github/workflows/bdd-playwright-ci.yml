@@ -1,0 +1,44 @@
+name: BDD Playwright Automation CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'bdd-playwright-automation/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'bdd-playwright-automation/**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bdd-playwright-automation
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+          cache-dependency-path: bdd-playwright-automation/pom.xml
+
+      - name: Install Playwright browsers
+        run: mvn -B exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
+
+      - name: Run test suite
+        run: mvn -B clean test
+
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: bdd-playwright-automation/allure-results/**
+          if-no-files-found: ignore
